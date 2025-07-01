@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             producto.descripcion
                         }</p>
                         <p class="estado">Disponible</p>
-                        <p class="precio">$${producto.precio || "12.00"}</p>
+                        <p class="precio">$${producto.precio}</p>
                         <a href="producto.html?id=${
                             producto.id
                         }" class="boton_destacado">Ver producto</a>
