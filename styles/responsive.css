@@ -1,11 +1,9 @@
 @media (max-width: 768px) {
-    /* Global / Base */
     html,
     body {
         overflow-x: hidden;
     }
 
-    /* Header / Navigation */
     .top-header {
         padding: 20px 10px;
     }
@@ -27,7 +25,6 @@
         gap: 20px;
     }
 
-    /* General Typography */
     .subtitulos {
         font-size: 1.8rem;
     }
@@ -45,7 +42,6 @@
         padding: 10px;
     }
 
-    /* Sections Layout */
     .producto_destacado {
         flex-direction: column;
         gap: 30px;
@@ -61,7 +57,6 @@
         justify-content: center;
     }
 
-    /* Blog Specific */
     #Blog article {
         flex-direction: column;
         text-align: center;
@@ -78,7 +73,7 @@
     }
 
     .container-item {
-        grid-template-columns: 1fr; /* Single column for small screens */
+        grid-template-columns: 1fr;
         gap: 20px;
         padding: 0;
     }
@@ -89,13 +84,13 @@
     }
 
     .item img {
-        height: 180px; /* Adjusted height for mobile catalog items */
+        height: 180px;
         object-fit: cover;
     }
 
     .info-producto {
         padding: 10px 20px;
-        font-size: 1rem; /* Base font size for product info */
+        font-size: 1rem;
     }
 
     .info-producto h3 {
