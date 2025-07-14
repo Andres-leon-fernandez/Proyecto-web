@@ -452,7 +452,16 @@ form textarea {
     color: #333;
     transition: border-color 0.3s ease;
 }
-
+/*Estilo de filtro*/
+#searchInput {
+    width: 85%;
+    padding: 15px;
+    font-size: 18px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 /* Estilos para el texto dentro de los inputs */
 form input::placeholder,
 form textarea::placeholder {
