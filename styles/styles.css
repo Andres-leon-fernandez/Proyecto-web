@@ -792,3 +792,61 @@ img {
     border-radius: 2px;
     display: block;
 }
+#promoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Caja del banner */
+.promo-banner {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+/* Botón X */
+.promo-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #a0522d;
+}
+
+/* Imagen */
+.promo-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transform: none;
+}
+
+/* Título */
+.promo-banner h2 {
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+    color: #a0522d;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.promo-banner p {
+    font-size: 1.2em;
+    color: #555;
+}
