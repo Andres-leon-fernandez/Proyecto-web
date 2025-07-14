@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     document.body.prepend(header);
 
-    // Lógica del menú hamburguesa
+
     const hamburguesa = document.getElementById("hamburguesa");
     const menu = document.querySelector(".menu");
 
