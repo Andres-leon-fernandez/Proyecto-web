@@ -51,3 +51,44 @@ document.addEventListener("DOMContentLoaded", () => {
                 "<p style='color: red;'>No se pudieron cargar los postres. 😢</p>";
         });
 });
+
+// Mostrar el modal después de unos segundos
+window.onload = function () {
+    setTimeout(function () {
+        document.getElementById("sugerenciaModal").style.display = "block";
+    }, 4000); // 4 segundos
+};
+
+// Cerrar el modal al hacer clic en la "x"
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("sugerenciaModal");
+    const span = document.querySelector(".modal .close");
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const abrirBtn = document.getElementById("btns");
+    const modal = document.getElementById("sugerenciaModal");
+    const cerrarBtn = modal.querySelector(".close");
+
+    abrirBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    cerrarBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});

@@ -40,6 +40,36 @@
         <section id="Blog">
             <div id="postres_peru"></div>
         </section>
+        <section id="sugerencias">
+            <div id="sugerenciaModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>¡Sugiérenos una receta!</h2>
+                    <form>
+                        <label for="nombre">Tu nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre..."
+                            required
+                        />
+                        <label for="receta">¿Qué receta te gustaría ver?</label>
+                        <textarea
+                            id="receta"
+                            name="receta"
+                            rows="4"
+                            placeholder="Describe tu idea..."
+                            required
+                        ></textarea>
+                        <button type="submit">Enviar sugerencia</button>
+                    </form>
+                </div>
+            </div>
+            <div class="">
+                <button id="btns">Añadir sugerencia</button>
+            </div>
+        </section>
         <script src="script/blog_script/blog.js" defer></script>
     </body>
 </html>
