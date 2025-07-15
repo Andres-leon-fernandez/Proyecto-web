@@ -52,37 +52,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
-// Mostrar el modal después de unos segundos
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("sugerenciaModal").style.display = "block";
-    }, 4000); // 4 segundos
-};
+    }, 4000); 
 
-// Cerrar el modal al hacer clic en la "x"
-document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("sugerenciaModal");
-    const span = document.querySelector(".modal .close");
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+    const closeBtn = modal.querySelector(".close");
     const abrirBtn = document.getElementById("btns");
-    const modal = document.getElementById("sugerenciaModal");
-    const cerrarBtn = modal.querySelector(".close");
 
+  
     abrirBtn.addEventListener("click", function () {
         modal.style.display = "block";
     });
 
-    cerrarBtn.addEventListener("click", function () {
+
+    closeBtn.addEventListener("click", function () {
         modal.style.display = "none";
     });
 
