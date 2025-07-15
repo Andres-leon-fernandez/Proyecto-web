@@ -9,8 +9,10 @@
     }
 
     .top_logo {
-        left: 25%;
-    }
+    position: absolute;
+    left: 25%;
+    transform: translateX(0);
+}
 
     .top_logo img {
         height: 120px;
